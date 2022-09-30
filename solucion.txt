@@ -1,0 +1,48 @@
+1.
+curl 'https://macowins-server.herokuapp.com/prendas'
+
+{
+	"id": 1,
+	"tipo": "pantalon"	
+}
+{
+	"id": 2,
+	"tipo": "saco"
+}
+...
+
+2.
+curl -XPOST 'https://macowins-server.herokuapp.com/prendas' --data '{ "tipo": "chomba", "talle": "XS" }'
+
+3.
+curl 'https://macowins-server.herokuapp.com/prendas/x' x seria el id de la prenda
+
+{
+	"id": x,
+	"tipo": "remera"
+}
+
+4.
+curl -XDELETE 'https://macowins-server.herokuapp.com/prendas/x'
+
+5.
+curl 'https://macowins-server.herokuapp.com/eventos'
+
+{
+	"id": 1,
+	"tipo": "casamiento",
+	"sugerencia": "saco, sombrero, corbata"
+}
+{
+	"id": 2
+	"tipo": "cumpleañito"
+	"sugerencia": "remera, jeans"
+}
+
+6.
+curl 'https://macowins-server.herokuapp.com/eventos/1'
+{
+	"id": 1,
+	"tipo": "casamiento",
+	"sugerencia": "saco, sombrero, corbata"
+}
